@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./Favicon_J.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeamExtremeDeadline</title>
+    <script type="module" crossorigin src="/meloncholic-san/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/meloncholic-san/assets/vendor-CWIMKQfM.js">
+    <link rel="stylesheet" crossorigin href="/meloncholic-san/assets/vendor-EHAfD6Pr.css">
+    <link rel="stylesheet" crossorigin href="/meloncholic-san/assets/index-BShXBf0H.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-container">
+    <a href="index.html" class="header-logo">
+        <img
+          class="header-logo-img"
+          srcset="data:image/webp;base64,UklGRlgEAABXRUJQVlA4WAoAAAAQAAAARQAARQAAQUxQSOYAAAABgFZtb93mg2AIghQGFROLQc0gZdAxMARDMARBUO++SH93TkRMAMYTX+9dbX6vVyasTrnalo1pRcpq+540LavtnedQs+07TbioOdRjKJvTPJDNbf7pMMeXH0g9KX3r5rp9yeZcPpB51/R2ujMBQOZfE8ABmAAtggqyEBPHwCWGUmP46zF0i1GD+FdSg+gx9HsMtcRQOAZOMRBqBA2QCBhIGgABEH8nACR1R28Qb4LPzVfHV1JPSt/Ang78Kn4Ev4sXweihHpQxTn2/Rpgqm6lgNt02UklYSNz2qJKwmrjUvkD7vXDCOFZQOCBMAwAAsBAAnQEqRgBGAD6RPphIJaOioSpYDSiwEgllAMxc+hWYoMcz7xs/T/sDfrf1nfRmSIBGVANmXvhBEtFY15yYlBGMJU/ysWc7PIdtLS/S7p3DpQu+ntf1H+B2wZefpnP0kOTJkOvbLW36wHOlUhHGT5mJnK8/wV4+AbMxzAtfAkON6NGDVMfrFq+zbQ+JOAD++DfbkAGksZ3EcOH9imMFzt+ZSos4M0lbm63suP0roEkrJ9mU50Y9e9NgUJ1MTdnmqhtQp6zg7LS7kYLUQqH5BYHa8aHwnoPjPvzZgrzJuAgWorb9xnetbRqvfTbauiP/rmMd81oQ7aai64D4gaMufLeMrB1fk5RnGzLIrygMBei+tO2AccXgr0MEopZ6mDT/9jX//+iYNJeHAeQQwOZ3uHCwEQSWGOf6f5VuVS1Rh+bxL9OR/DOFVnoRfoo41ksTwetKWZLfO9w6KjX0RsM65VaY5/cGZG92052+PVCHMVhpEZaTeochW2Xn9h+YwOxKDaEufAoyyGejOFGR9Awn77GfS4JmuWuO0nzwulkjzODUIq+Y4rqwFz+0x8RvkcRVZGzQSz6UgYHMacPUVjLJyGV2C6geWhwTeW9ylcw/HgQ0LF2mEPrE4Ek7b8PeVnIIf6HlEwLx2J4IzmfidqfWqvVSeONot+xIGvttvMWBAOYQBHwfIEWYdPm09+4GTgN8HucPhiHvb9VLTAsUPQXGOz+g9h/JzOfXVIgyhE6U4xVlmDNtewUTUdHSKyqmZ7Z7LYMFUg3FrlYGN4XzIdra8Rr9O/WNoFb12qmba9MJQmiZ7ciVe/kgTAkICWiz0pu53ocfPSUQlVeKzU9I1bHT9t82ZnVMw8VLIiE2dkCS54fKBjMVxi30I/+KFJL6RwW/aI7q530dXiwMQgVBTjj/MxW/6b8echvQ7yf8wIMo1s+M2BtwNO4P3msHqlw0aR5rZPkRUdKsqi5TZnSRWEFf0cGPVFDY4e1rk9+9z5n67alnlHxYJRC8M5urZHN6IreEis2tFPUZ3uDZzkTz7r8+a0/w7ElNjK/KdsG0Hgyrhr4Em0W9bv+eJmrfYzuJgjMju0cnmBwX1dTQYw9dyCjuG8R1aiXi9ompLyFIAA== 1x, data:image/webp;base64,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 2x"
+          src="data:image/webp;base64,UklGRlgEAABXRUJQVlA4WAoAAAAQAAAARQAARQAAQUxQSOYAAAABgFZtb93mg2AIghQGFROLQc0gZdAxMARDMARBUO++SH93TkRMAMYTX+9dbX6vVyasTrnalo1pRcpq+540LavtnedQs+07TbioOdRjKJvTPJDNbf7pMMeXH0g9KX3r5rp9yeZcPpB51/R2ujMBQOZfE8ABmAAtggqyEBPHwCWGUmP46zF0i1GD+FdSg+gx9HsMtcRQOAZOMRBqBA2QCBhIGgABEH8nACR1R28Qb4LPzVfHV1JPSt/Ang78Kn4Ev4sXweihHpQxTn2/Rpgqm6lgNt02UklYSNz2qJKwmrjUvkD7vXDCOFZQOCBMAwAAsBAAnQEqRgBGAD6RPphIJaOioSpYDSiwEgllAMxc+hWYoMcz7xs/T/sDfrf1nfRmSIBGVANmXvhBEtFY15yYlBGMJU/ysWc7PIdtLS/S7p3DpQu+ntf1H+B2wZefpnP0kOTJkOvbLW36wHOlUhHGT5mJnK8/wV4+AbMxzAtfAkON6NGDVMfrFq+zbQ+JOAD++DfbkAGksZ3EcOH9imMFzt+ZSos4M0lbm63suP0roEkrJ9mU50Y9e9NgUJ1MTdnmqhtQp6zg7LS7kYLUQqH5BYHa8aHwnoPjPvzZgrzJuAgWorb9xnetbRqvfTbauiP/rmMd81oQ7aai64D4gaMufLeMrB1fk5RnGzLIrygMBei+tO2AccXgr0MEopZ6mDT/9jX//+iYNJeHAeQQwOZ3uHCwEQSWGOf6f5VuVS1Rh+bxL9OR/DOFVnoRfoo41ksTwetKWZLfO9w6KjX0RsM65VaY5/cGZG92052+PVCHMVhpEZaTeochW2Xn9h+YwOxKDaEufAoyyGejOFGR9Awn77GfS4JmuWuO0nzwulkjzODUIq+Y4rqwFz+0x8RvkcRVZGzQSz6UgYHMacPUVjLJyGV2C6geWhwTeW9ylcw/HgQ0LF2mEPrE4Ek7b8PeVnIIf6HlEwLx2J4IzmfidqfWqvVSeONot+xIGvttvMWBAOYQBHwfIEWYdPm09+4GTgN8HucPhiHvb9VLTAsUPQXGOz+g9h/JzOfXVIgyhE6U4xVlmDNtewUTUdHSKyqmZ7Z7LYMFUg3FrlYGN4XzIdra8Rr9O/WNoFb12qmba9MJQmiZ7ciVe/kgTAkICWiz0pu53ocfPSUQlVeKzU9I1bHT9t82ZnVMw8VLIiE2dkCS54fKBjMVxi30I/+KFJL6RwW/aI7q530dXiwMQgVBTjj/MxW/6b8echvQ7yf8wIMo1s+M2BtwNO4P3msHqlw0aR5rZPkRUdKsqi5TZnSRWEFf0cGPVFDY4e1rk9+9z5n67alnlHxYJRC8M5urZHN6IreEis2tFPUZ3uDZzkTz7r8+a0/w7ElNjK/KdsG0Hgyrhr4Em0W9bv+eJmrfYzuJgjMju0cnmBwX1dTQYw9dyCjuG8R1aiXi9ompLyFIAA=="
+          alt="jefferson"
+        />
+        <p class="header-logo-text">jefferson*</p>
+    </a>
+
+
+    <div class="header-menu header-hidden">
+      <button class="header-menu-btn">Menu</button>
+      <nav class="header-menu-list header-hidden">
+        <a href="#about-me" class="header-menu-link">About me</a>
+        <a href="#benefits" class="header-menu-link">Benefits</a>
+        <a href="#projects" class="header-menu-link">Projects</a>
+        <a href="#faq" class="header-menu-link">FAQ</a>
+      </nav>
+    </div>
+    <a href="#work-together" class="header-btn-order header-hidden">Order the project</a>
+      <svg class="header-menu-img" tabindex="0">
+        <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-menu-05"></use>
+      </svg>
+  </div>
+
+  <div class="header-modal modal-hidden">
+    <div class="header-modal-wrapper">
+        <svg class="header-menu-close-img" tabindex="0">
+          <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-x"></use>
+        </svg>
+        <nav class="header-modal-menu-list">
+          <a href="#about-me" class="header-modal-menu-link">About me</a>
+          <a href="#benefits" class="header-modal-menu-link">Benefits</a>
+          <a href="#projects" class="header-modal-menu-link">Projects</a>
+          <a href="#faq" class="header-modal-menu-link">FAQ</a>
+        </nav>
+        <a href="#work-together" class="header-modal-btn-order">Order the project</a>
+    </div>
+  </div>
+
+</header>
+
+
+    <main>
+      <section class="section-hero" id="hero">
+  <div class="container">
+    <h1 class="hero-title">
+      Hello. <br />
+      I’m Fullstack developer Lloyd Jefferson.
+    </h1>
+    <ul class="hero-soc-list">
+      <li class="hero-soc-item">
+        <a
+          class="hero-soc-link"
+          href="https://www.instagram.com/goitclub/"
+          target="blank"
+          >IG
+        </a>
+      </li>
+      <li class="hero-soc-item">
+        <a
+          class="hero-soc-link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+        >
+          FB
+        </a>
+      </li>
+      <li class="hero-soc-item">
+        <a
+          class="hero-soc-link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+        >
+          YB
+        </a>
+      </li>
+      <li class="hero-soc-item">
+        <a
+          class="hero-soc-link"
+          href="https://github.com/meloncholic-san/project-TeamExtremeDeadline01"
+          target="_blank"
+        >
+          GH
+        </a>
+      </li>
+      <li class="hero-soc-item">
+        <a
+          class="hero-soc-link"
+          href="mailto:lloydjefferson@gmail.com"
+          target="_blank"
+        >
+          lloydjefferson@gmail.com
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section about-section" id="about-me">
+  <div class="container">
+    <h2 class="title section-title visually-hidden">About me</h2>
+
+    <div class="about-intro">
+      <div class="about-text-box">
+        <p class="about-description">I work with people all over the world to create impressive and <span
+            class="highlight">functional</span> <span class="faded">websites</span>
+          that
+          reflect each client's
+          unique personality.</p>
+      </div>
+
+      <div class="about-image-box">
+        <picture>
+          <!-- Desktop 1440px+ -->
+          <source media="(min-width: 1440px)" srcset="/meloncholic-san/assets/lloyd-desk-1mW1BmUY.webp 1x, /meloncholic-san/assets/lloyd-desk@2x-BNmmWiKX.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 1440px)" srcset="/meloncholic-san/assets/lloyd-desk-DVe-aj0t.jpg 1x, /meloncholic-san/assets/lloyd-desk@2x-DbCfZ3sg.jpg 2x"
+            type="image/jpeg">
+
+          <!-- Tablet 768px+ -->
+          <source media="(min-width: 768px)" srcset="/meloncholic-san/assets/lloyd-tab-CPaV1wjC.webp 1x, /meloncholic-san/assets/lloyd-tab@2x-DXz0AL92.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="/meloncholic-san/assets/lloyd-tab-CInlVGgL.jpg 1x, /meloncholic-san/assets/lloyd-tab@2x-DNI2elJA.jpg 2x"
+            type="image/jpeg">
+
+          <!-- Mobile 375px+ -->
+          <source media="(min-width: 375px)" srcset="/meloncholic-san/assets/lloyd-mob-DndRzbeo.webp 1x, /meloncholic-san/assets/lloyd-mob@2x-IUxNrxAz.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 375px)" srcset="/meloncholic-san/assets/lloyd-mob-wMSvektt.jpg 1x, /meloncholic-san/assets/lloyd-mob@2x-Bspco9Hm.jpg 2x"
+            type="image/jpeg">
+
+          <!-- Default image -->
+          <img class="about-image" src="/meloncholic-san/assets/lloyd-mob-wMSvektt.jpg" srcset="/meloncholic-san/assets/lloyd-mob@2x-Bspco9Hm.jpg 2x"
+            alt="Lloyd Jefferson Photo" width="250" height="350" loading="lazy">
+        </picture>
+      </div>
+    </div>
+
+    <ul class="about-list">
+      <li class="about-list-item is-active">
+        <div class="about-list-header">
+          <h3 class="about-list-item-title">About me</h3>
+          <button class="about-toggle-btn">
+            <svg class="faq-icon" width="20" height="20">
+              <use xlink:href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconUp"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-list-content">
+          <p class="about-list-item-description">I am Lloyd Jefferson, a talented programmer with extensive expertise in
+            software
+            development. I have an understanding of different programming languages and technologies, always ready to
+            improve my skills. I always follow the latest trends and look for unconventional, creative solutions to
+            problems. I have a high level of analytical skills and am able to effectively solve even the most difficult
+            tasks encountered on the way.</p>
+          <p class="about-list-item-description">Able to work both independently and in a team. I can effectively
+            cooperate
+            with
+            colleagues, exchanging ideas and finding optimal solutions. Professional maturity allows you to calmly cope
+            with
+            challenges and stressful situations, while maintaining a high quality of work. I am always looking for
+            opportunities for self-improvement. I actively study new technologies and practices to stay abreast of the
+            latest innovations. I have a strong understanding of various programming languages, frameworks and
+            architectural
+            concepts that allow me to create efficient and scalable software.</p>
+        </div>
+      </li>
+      <li class="about-list-item">
+        <div class="about-list-header">
+          <h3 class="about-list-item-title">Role</h3>
+          <button class="about-toggle-btn">
+            <svg class="faq-icon" width="20" height="20">
+              <use xlink:href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconDown"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-list-content">
+          <p class="about-list-item-description">Frontend development</p>
+          <p class="about-list-item-description">HeadlessCMS, Wordpress</p>
+          <p class="about-list-item-description">Blender (enjoy)</p>
+        </div>
+      </li>
+      <li class="about-list-item">
+        <div class="about-list-header">
+          <h3 class="about-list-item-title">Education</h3>
+          <button class="about-toggle-btn">
+            <svg class="faq-icon" width="20" height="20">
+              <use xlink:href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconDown"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="about-list-content">
+          <p class="about-list-item-description">2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </p>
+          <p class="about-list-item-description">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New
+            York</p>
+          <p class="about-list-item-description">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</p>
+        </div>
+      </li>
+    </ul>
+
+    <div class="swiper-skills-container">
+      <ul class="skills-list">
+        <li class="skills-list-item">HTML/CSS</li>
+        <li class="skills-list-item">JavaScript</li>
+        <li class="skills-list-item">React</li>
+        <li class="skills-list-item">Node.js</li>
+        <li class="skills-list-item">React Native</li>
+        <li class="skills-list-item">Soft skills</li>
+        <li class="skills-list-item">Problem Solving</li>
+      </ul>
+      <button type="button" class="skills-slider-btn">
+        <svg class="swiper-pagination">
+          <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+      <section class="benefits" id="benefits">
+    <div class="container container-benefits">
+        <h2 class="benefits-header">BENEFITS OF WORKING WITH ME</h2>
+        <div class="desk">
+            <ul class="benefits-frame">
+                <li class="benefits-frame-content">
+                    <div class="icon-frame">
+                        <svg class="benefits-icon" width="24" height="24" aria-hidden="true" >
+
+                            <use href="/meloncholic-san/assets/icon-BDGT-2D1.svg#icon-user"></use>
+
+                        </svg>
+                    </div>
+                    <div class="benefits-content">
+                        <h3 class="benefits-h">Expertise</h3>
+                        <p class="benefits-description">As a highly experienced developer, I have deep knowledge of
+                            programming and website development.</p>
+                    </div>
+
+                </li>
+                <li class="benefits-frame-content">
+                    <div class="icon-frame">
+                        <svg class="benefits-icon" width="24" height="24" aria-hidden="true">
+                            <use href="/meloncholic-san/assets/icon-BDGT-2D1.svg#icon-message"></use>
+                        </svg>
+                    </div>
+                    <div class="benefits-content">
+                        <h3 class="benefits-h">Communication</h3>
+                        <p class="benefits-description">Understanding your needs and wants is my priority, and I am
+                            always open to discussions and corrections.</p>
+                    </div>
+
+                </li>
+                <li class="benefits-frame-content">
+                    <div class="icon-frame">
+                        <svg class="benefits-icon" width="24" height="24" aria-hidden="true">
+                            <use href="/meloncholic-san/assets/icon-BDGT-2D1.svg#icon-brush"></use>
+                        </svg>
+                    </div>
+                    <div class="benefits-content">
+                        <h3 class="benefits-h">Art</h3>
+                        <p class="benefits-description">Thanks to my creative nature, I am ready to accept challenges
+                            and help you bring your ideas to life.</p>
+                    </div>
+
+                </li>
+                <li class="benefits-frame-content">
+                    <div class="icon-frame">
+                        <svg class="benefits-icon" width="24" height="24" aria-hidden="true">
+                            <use href="/meloncholic-san/assets/icon-BDGT-2D1.svg#icon-hourglass"></use>
+                        </svg>
+                    </div>
+                    <div class="benefits-content">
+                        <h3 class="benefits-h">Urgent execution</h3>
+                        <p class="benefits-description">I understand how important time is to you. Ready to work quickly
+                            and efficiently, without reducing the quality of work.</p>
+                    </div>
+                </li>
+            </ul>
+            <a class="button_work_together" href="#work-together">Order the project</a>
+        </div>
+
+
+    </div>
+</section>
+      <section class="section projects-section" id="projects">
+  <div class="container projects-container">
+    <h2 class="projects-tittle">Projects</h2>
+    <div class="swiper-projects-container">
+      <ul class="projects-list swiper-wrapper">
+        <li class="swiper-slide">
+          <div class="projects-list-item">
+            <div class="projects-list-item-first-part">
+              <ul class="projects-list-item-tech-list">
+                <li class="projects-list-item-tech-list-item">#react</li>
+                <li class="projects-list-item-tech-list-item">#js</li>
+                <li class="projects-list-item-tech-list-item">#node.js</li>
+                <li class="projects-list-item-tech-list-item">#git</li>
+              </ul>
+              <p class="projects-list-item-tittle">
+                Programming Across<br />Borders: Ideas,<br />Technologies,
+                Innovations
+              </p>
+              <a
+                class="projects-list-item-ref"
+                href="https://github.com/meloncholic-san/project-TeamExtremeDeadline01"
+                target="_blank"
+                >See project</a
+              >
+            </div>
+            <div class="projects-list-item-sec-part">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/meloncholic-san/assets/read_journey1x_desctop-D6TMl42p.png 1x, /meloncholic-san/assets/read_journey@2x_desctop-BN_HvOc_.png 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/meloncholic-san/assets/read_journey1x_mobile-BZPVHXFU.png 1x, /meloncholic-san/assets/read_journey@2x_mobile-BlzaNYS9.png 2x"
+                />
+                <img
+                  src="/meloncholic-san/assets/read_journey1x_mobile-BZPVHXFU.png"
+                  alt="read journey"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="projects-list-item">
+            <div class="projects-list-item-first-part">
+              <ul class="projects-list-item-tech-list">
+                <li class="projects-list-item-tech-list-item">#react</li>
+                <li class="projects-list-item-tech-list-item">#js</li>
+                <li class="projects-list-item-tech-list-item">#node.js</li>
+                <li class="projects-list-item-tech-list-item">#git</li>
+              </ul>
+              <p class="projects-list-item-tittle">
+                Programming Across<br />Borders: Ideas,<br />Technologies,
+                Innovations
+              </p>
+              <a
+                class="projects-list-item-ref"
+                href="https://github.com/meloncholic-san/project-TeamExtremeDeadline01"
+                target="_blank"
+                >See project</a
+              >
+            </div>
+            <div class="projects-list-item-sec-part">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/meloncholic-san/assets/petlove@2x_desctop-DcJ8BwRO.png 1x, /meloncholic-san/assets/petlove@2x_desctop-DcJ8BwRO.png 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/meloncholic-san/assets/petlove1x_mobile-Cjr9FGmw.png 1x, /meloncholic-san/assets/petlove@2x_mobile-DnTkoGlV.png 2x"
+                />
+                <img
+                  src="/meloncholic-san/assets/petlove1x_mobile-Cjr9FGmw.png"
+                  alt="read journey"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide">
+          <div class="projects-list-item">
+            <div class="projects-list-item-first-part">
+              <ul class="projects-list-item-tech-list">
+                <li class="projects-list-item-tech-list-item">#react</li>
+                <li class="projects-list-item-tech-list-item">#js</li>
+                <li class="projects-list-item-tech-list-item">#node.js</li>
+                <li class="projects-list-item-tech-list-item">#git</li>
+              </ul>
+              <p class="projects-list-item-tittle">
+                Programming Across<br />Borders: Ideas,<br />Technologies,
+                Innovations
+              </p>
+              <a
+                class="projects-list-item-ref"
+                href="https://github.com/meloncholic-san/project-TeamExtremeDeadline01"
+                target="_blank"
+                >See project</a
+              >
+            </div>
+            <div class="projects-list-item-sec-part">
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/meloncholic-san/assets/vocab_builder1x_desctop-BlsIjF8E.png 1x, /meloncholic-san/assets/vocab_builder@2x_dectop-CxFxejbH.png 2x"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="/meloncholic-san/assets/vocab_builder1x_mobile-CmNGyU0x.png 1x, /meloncholic-san/assets/vocab_builder@2x_mobile-DJ7MnNbv.png 2x"
+                />
+                <img
+                  src="/meloncholic-san/assets/vocab_builder@2x_mobile-DJ7MnNbv.png"
+                  alt="read journey"
+                />
+              </picture>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="projects-arrows">
+      <button
+        type="button"
+        class="projects-swiper-button projects-swiper-prev-button"
+      >
+        <svg class="swiper-arrow-right" width="24" height="24">
+          <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="projects-swiper-button projects-swiper-next-button"
+      >
+        <svg class="swiper-arrow-right" width="24" height="24">
+          <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+<!--  -->
+
+      <section class="faq" id="faq">
+    <div class="container">
+        <h2 class="faq-h2">FAQ</h2>
+    <div class="faq-content">
+        <ul class="accordion faq-list" id="faqAccordion">
+            <li class="faq-link">
+                <div class="faq-item">
+                    <span class="faq-title">What programming languages are most often used in your project?</span>
+                    <button class="faq-btn">
+                        <svg class="faq-icon" width="20" height="20">
+                            <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconDown"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-panel">
+                    <p>Typically, web development includes frontend (client-side) and backend (server-side) languages.</p>
+                </div>
+            </li>
+            <li class="faq-link">
+                <div class="faq-item">
+                    <span class="faq-title">What are the deadlines for the project?</span>
+                    <button class="faq-btn">
+                        <svg class="faq-icon" width="20" height="20">
+                            <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconDown"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-panel">
+                    <p>The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining axact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+                </div>
+            </li>
+            <li class="faq-link">
+               <div class="faq-item">
+                <span class="faq-title">What payment methods do you accept?</span>
+                <button class="faq-btn">
+                    <svg class="faq-icon" width="20" height="20">
+                        <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconDown"></use>
+                    </svg>
+                </button>
+               </div>
+                <div class="faq-panel">
+                    <p>Payment through dredit and dedit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptjcurrencies such as Bitcoin, Ethereum and others.</p>
+                </div>
+            </li>
+            <li class="faq-link">
+                <div class="faq-item">
+                    <span class="faq-title">How can I contact you?</span>
+                    <button class="faq-btn">
+                        <svg class="faq-icon" width="20" height="20">
+                            <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconDown"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-panel">
+                    <p>In the field of web development, there are various technologies and programming languages. Typically, yhis includes a combination of frontend (client side) and backend (server side) languages.</p>
+                </div>
+            </li>
+            <li class="faq-link">
+                <div class="faq-item"> 
+                    <span class="faq-title">Do you provide advice or support?</span>
+                    <button class="faq-btn">
+                        <svg class="faq-icon" width="20" height="20">
+                            <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconDown"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-panel">
+                    <p>The terms of project implementation depend to a large extent on a number of factors, such as the scope of the project, its complexity, and the availability of resources. Determining axact deadlines is a difficult task, and it usually occurs during the planning phase of the project.</p>
+                </div>
+            </li>
+            <li class="faq-link">
+                <div class="faq-item">
+                    <span class="faq-title">What does the process of developing a software product look like from idea to implementation?</span>
+                    <button class="faq-btn">
+                        <svg class="faq-icon" width="20" height="20">
+                            <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-IconDown"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="faq-panel">
+                    <p>Payment through dredit and dedit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal, as well as payments in cryptjcurrencies such as Bitcoin, Ethereum and others.</p>
+                </div>
+            </li>
+         </ul>
+    </div>
+    </div>
+</section>
+      <section class="section section-covers" id="covers">
+  <div class="container-covers">
+    <h2 class="covers-header visually-hidden">Covers</h2>
+    <div class="covers-gallery">
+      <ul class="covers-list">
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-powerpulse-Cgv6aO2U.webp 1x, /meloncholic-san/assets/covers-powerpulse@2x-DLMYupqs.webp 2x"
+            src="/meloncholic-san/assets/covers-powerpulse-Cgv6aO2U.webp"
+            alt="Covers PowerPulse"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-mimino-maHJjBLt.webp 1x, /meloncholic-san/assets/covers-mimino@2x-qmKVqoTq.webp 2x"
+            src="/meloncholic-san/assets/covers-mimino-maHJjBLt.webp"
+            alt="Covers Mimino"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-clothes-Bf7OrkmB.webp 1x, /meloncholic-san/assets/covers-clothes@2x-Ba7xDTqS.webp 2x"
+            src="/meloncholic-san/assets/covers-clothes-Bf7OrkmB.webp"
+            alt="Covers Clothes"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-green-harvest-DtQYqSNN.webp 1x, /meloncholic-san/assets/covers-green-harvest@2x-B8Wmk_yH.webp 2x"
+            src="/meloncholic-san/assets/covers-green-harvest-DtQYqSNN.webp"
+            alt="Covers Green Harvest"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-wallet-uALc_YJo.webp 1x, /meloncholic-san/assets/covers-wallet@2x-B5SmLpiS.webp 2x"
+            src="/meloncholic-san/assets/covers-wallet-uALc_YJo.webp"
+            alt="Covers Wallet"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-chego-CA7KwXju.webp 1x, /meloncholic-san/assets/covers-chego@2x-dzHKokUH.webp 2x"
+            src="/meloncholic-san/assets/covers-chego-CA7KwXju.webp"
+            alt="Covers Chego"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-energy-flow-DKY2WSeU.webp 1x, /meloncholic-san/assets/covers-energy-flow@2x-BBleIhP7.webp 2x"
+            src="/meloncholic-san/assets/covers-energy-flow-DKY2WSeU.webp"
+            alt="Covers EnergyFlow"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-fruitbox-CRwQON__.webp 1x, /meloncholic-san/assets/covers-fruitbox@2x-CbHRya7M.webp 2x"
+            src="/meloncholic-san/assets/covers-fruitbox-CRwQON__.webp"
+            alt="Covers Fruitbox"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-english-B2ysS_po.webp 1x, /meloncholic-san/assets/covers-english@2x-1Jqz58SH.webp 2x"
+            src="/meloncholic-san/assets/covers-english-B2ysS_po.webp"
+            alt="Covers English Excellence"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-starlight-CLRruaYE.webp 1x, /meloncholic-san/assets/covers-starlight@2x-CLLI1N62.webp 2x"
+            src="/meloncholic-san/assets/covers-starlight-CLRruaYE.webp"
+            alt="Covers Starlight"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-green-harvest-DtQYqSNN.webp 1x, /meloncholic-san/assets/covers-green-harvest@2x-B8Wmk_yH.webp 2x"
+            src="/meloncholic-san/assets/covers-green-harvest-DtQYqSNN.webp"
+            alt="Covers Green Harvest"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-chego-CA7KwXju.webp 1x, /meloncholic-san/assets/covers-chego@2x-dzHKokUH.webp 2x"
+            src="/meloncholic-san/assets/covers-chego-CA7KwXju.webp"
+            alt="Covers Chego"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-mimino-maHJjBLt.webp 1x, /meloncholic-san/assets/covers-mimino@2x-qmKVqoTq.webp 2x"
+            src="/meloncholic-san/assets/covers-mimino-maHJjBLt.webp"
+            alt="Covers Mimino"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-wallet-uALc_YJo.webp 1x, /meloncholic-san/assets/covers-wallet@2x-B5SmLpiS.webp 2x"
+            src="/meloncholic-san/assets/covers-wallet-uALc_YJo.webp"
+            alt="Covers Wallet"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-powerpulse-Cgv6aO2U.webp 1x, /meloncholic-san/assets/covers-powerpulse@2x-DLMYupqs.webp 2x"
+            src="/meloncholic-san/assets/covers-powerpulse-Cgv6aO2U.webp"
+            alt="Covers PowerPulse"
+            width="544"
+          />
+        </li>
+        <li class="covers-item">
+          <img
+            srcset="/meloncholic-san/assets/covers-energy-flow-DKY2WSeU.webp 1x, /meloncholic-san/assets/covers-energy-flow@2x-BBleIhP7.webp 2x"
+            src="/meloncholic-san/assets/covers-energy-flow-DKY2WSeU.webp"
+            alt="Covers EnergyFlow"
+            width="544"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+      <section class="reviews-section">
+    <div class="container">
+
+            <h2 class="reviews-header">Reviews</h2>
+            <div class="reviews-swiper">
+
+                <div class="reviews-swiper-wrapper">
+
+                    <div class="reviews-swiper-slide"><p class="reviews-not-found">Not found</p></div>
+                    <div class="reviews-swiper-slide"><p class="reviews-not-found">Not found</p></div>
+                    <div class="reviews-swiper-slide"><p class="reviews-not-found">Not found</p></div>
+                    <div class="reviews-swiper-slide"><p class="reviews-not-found">Not found</p></div>
+                    <div class="reviews-swiper-slide"><p class="reviews-not-found">Not found</p></div>
+                    <div class="reviews-swiper-slide"><p class="reviews-not-found">Not found</p></div>
+
+                </div>
+                <nav class="reviews-swiper-nav-buttons">
+
+                    <button type="button" class="swiper-button-prev"  data-swiper-id="2" title="Previous slide" aria-label="Previous slide">
+                        <svg class="review-swiper-prev-icon" aria-hidden="true">
+                            <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-arrow-narrow-left"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="swiper-button-next"  data-swiper-id="2" title="Next slide" aria-label="Next slide">
+                        <svg class="review-swiper-next-icon" aria-hidden="true">
+                            <use href="/meloncholic-san/assets/icon-sprite-Db7mK2Ci.svg#icon-arrow-narrow-right"></use>
+                        </svg>
+                    </button>
+
+                </nav>
+            </div>
+            
+    </div>    
+</section>
+
+    </main>
+    <footer class="footer" id="work-together">
+  <div class="container">
+    <div class="logo-title-container">
+      <a href="index.html" class="footer-logo">
+        <img
+          class="img-logo"
+          srcset="data:image/webp;base64,UklGRlgEAABXRUJQVlA4WAoAAAAQAAAARQAARQAAQUxQSOYAAAABgFZtb93mg2AIghQGFROLQc0gZdAxMARDMARBUO++SH93TkRMAMYTX+9dbX6vVyasTrnalo1pRcpq+540LavtnedQs+07TbioOdRjKJvTPJDNbf7pMMeXH0g9KX3r5rp9yeZcPpB51/R2ujMBQOZfE8ABmAAtggqyEBPHwCWGUmP46zF0i1GD+FdSg+gx9HsMtcRQOAZOMRBqBA2QCBhIGgABEH8nACR1R28Qb4LPzVfHV1JPSt/Ang78Kn4Ev4sXweihHpQxTn2/Rpgqm6lgNt02UklYSNz2qJKwmrjUvkD7vXDCOFZQOCBMAwAAsBAAnQEqRgBGAD6RPphIJaOioSpYDSiwEgllAMxc+hWYoMcz7xs/T/sDfrf1nfRmSIBGVANmXvhBEtFY15yYlBGMJU/ysWc7PIdtLS/S7p3DpQu+ntf1H+B2wZefpnP0kOTJkOvbLW36wHOlUhHGT5mJnK8/wV4+AbMxzAtfAkON6NGDVMfrFq+zbQ+JOAD++DfbkAGksZ3EcOH9imMFzt+ZSos4M0lbm63suP0roEkrJ9mU50Y9e9NgUJ1MTdnmqhtQp6zg7LS7kYLUQqH5BYHa8aHwnoPjPvzZgrzJuAgWorb9xnetbRqvfTbauiP/rmMd81oQ7aai64D4gaMufLeMrB1fk5RnGzLIrygMBei+tO2AccXgr0MEopZ6mDT/9jX//+iYNJeHAeQQwOZ3uHCwEQSWGOf6f5VuVS1Rh+bxL9OR/DOFVnoRfoo41ksTwetKWZLfO9w6KjX0RsM65VaY5/cGZG92052+PVCHMVhpEZaTeochW2Xn9h+YwOxKDaEufAoyyGejOFGR9Awn77GfS4JmuWuO0nzwulkjzODUIq+Y4rqwFz+0x8RvkcRVZGzQSz6UgYHMacPUVjLJyGV2C6geWhwTeW9ylcw/HgQ0LF2mEPrE4Ek7b8PeVnIIf6HlEwLx2J4IzmfidqfWqvVSeONot+xIGvttvMWBAOYQBHwfIEWYdPm09+4GTgN8HucPhiHvb9VLTAsUPQXGOz+g9h/JzOfXVIgyhE6U4xVlmDNtewUTUdHSKyqmZ7Z7LYMFUg3FrlYGN4XzIdra8Rr9O/WNoFb12qmba9MJQmiZ7ciVe/kgTAkICWiz0pu53ocfPSUQlVeKzU9I1bHT9t82ZnVMw8VLIiE2dkCS54fKBjMVxi30I/+KFJL6RwW/aI7q530dXiwMQgVBTjj/MxW/6b8echvQ7yf8wIMo1s+M2BtwNO4P3msHqlw0aR5rZPkRUdKsqi5TZnSRWEFf0cGPVFDY4e1rk9+9z5n67alnlHxYJRC8M5urZHN6IreEis2tFPUZ3uDZzkTz7r8+a0/w7ElNjK/KdsG0Hgyrhr4Em0W9bv+eJmrfYzuJgjMju0cnmBwX1dTQYw9dyCjuG8R1aiXi9ompLyFIAA== 1x, data:image/webp;base64,UklGRmgKAABXRUJQVlA4WAoAAAAQAAAAiwAAiwAAQUxQSMsBAAABkFXbbt1aG4IgGEIgGEIZRAwqJg2DlIEPA0MIBEEwBJ1nHo6lz3sjYgLQKWV5lU2bdd+0lpdkwjCJV7XbbyunAZBUG2bldK9cbbDlcRsStQEr3+PZbNDK/WW1gSv3lYoNfk0dzc2Gr9wLvczFF3WR1JzU1MHUzE2dLpvN1fmipzkrlzzNXblgNofn0yZzeTopqU8tnUJqTiud8TK3XyewOT4fSupZS0dWc70cYHM+71PvdBeb+7JH/Wv0F1sA5S+NgP7xsBDm30oM6i/Jgkg/OAryo0ahAkgWRgI4DgyscViBLQ4KskBSjkSWSMgSiaVE4qNGYtNIaItEs//+//fjFommkdAtErVE4mOJxCKRkByJTJEgaBw24B2HFeA4MEBxSABqFCoASBT4B0Uh/UCNwQd+zTF4/AaNgOJPiQD/Rc0/xU7xj/dAvVPszt7xPhTfVhxMzTNNR8CeMY4vfi04kdQrpTOQmk+acO7k04Sz2SPG+eKP4ErxRnAt+8K4elI/2oTrk3qhCT3S4sNC6JR1fI3Rb3qPriR0zToyzeiedVRNcEvWEakQ7vooo6kZt05cx1GFcP/E7+1+ujJhmJRlKVVbf023skgmdAoAVlA4IHYIAAAwKQCdASqMAIwAPpE+mUoloyImp5ebmNASCWcIkCdTJwHr9KijFeG/lZ9+y/Ti/sCjxZdLYG8LgA7xqa4rKmm+Pr6t9gn9a/Tf9i3oifruYqw5K//iZWSciz5PRS67CJg8mH0JiTTYupSiJtOF1M0yKChjDXuakC/JNPSswkaLyhQXlyC+00rYM4+gpAVTNh8URldrKKnU4l3lPalopvNg+IQslWpL4RHWbCbjuJVPAPjV6FTAK5NP2BjXn6XeH9hyRj+mlat6j6H2GzOqbKKNntm4JESsH6z6dCY1fHLQVG/q0+emZufXmbX5QpLT/KZ1BIL0l7TWV3yMvy/ySIx87+niL3U2xB3DqPY7e07laxLZt58DtFQbLlHgEnLGUA1OifXz5TrC+NIMy2YWcf3l+OZCJJTnD4569m43D5hRwtcLeRQwy0qpxMfFHB37C5R8AAD+/sylz/+xB27oVNgzQIuUgSx4QskYJHoZpm9gN8+f7uBpNXHaKYX12//MA37/1giNmyfaaNofDak4PfP7RbIFCIZ4sHWG0iwkn5aUOkTkvmfxig/1Y29EwnzDmUqb10ZvLaBbiPwONyzJ/MO78vBvVqTtN3az2tvpq3zqTMusSzTyWz/o/CDOp/zPtQGHzAYnwqspQubnOn4O3jn4QnKGZXHuxcvePYQbhCuQ+lnrTXIEB7U6hslFyZ+UpE0N4IIOZt/AjceJxaDXEsW/QsbT/gNgreSJwnWs7CQee6dTp64p4CWH6pJe+L6cE9tUZEI+o0qxR44f5t98Hv+qO3m+0C+g6Di6tVAqTiAmDsgHtD02pivNUoYsLAQbSlFc4uazs9RYFRgH8z2v/bptBP9S+5PArvzIMr3ACJDw8jkAC0PzOj9ALBrLILASSeoi1XJTnoXzKKr/fcN5kPV1/HyzZt0KrUS2MyEjuFo+TP3uSMyDvhy8q9XgtvphfaVeWlfzc+pFv78WAtwA3EawOmG2xxXN0wqTDd+UPB/gcGNVhAJxVO/ZXM3ABDiQ7/tlLEgyRyuWq0r9bIZhn6D0ZvHw873iIerp4wFAYqZrLKhsCnrkA1nTDF+dGfl1Qj0uGM6A71z/XIyotP+sGCKCIll7LrJhDVen+0kUynl98oIPB8LG+6JnZeZifz84dYih6eAqvYYbX+Jibkqxumghfx7cLggq75LORkuI3gy3vxOsUG/ztctQuW+h0PzfBPnehqDwckFLL72RNviqpBEr+X6lhs5OengSa8NrK0VFgWUbvixDRblONgAfsf/c6zzz4r1hI/hbbL/2AXIiCz8QqE00bocDupz819Ivj0BBG2jNeSetiTA2KsKYB22iiluXmRo9Z/6S5vSIPFceaZgpTQr4Oc8G0V9qSFG1uZC2m7jurCfDGu3gLhNfid5Oq3xvLm/PPrLX3FVLGYVTMvO5yNAch8BPQ/vvOV4y4ap0/xdQfv//1I96uVQ6Umupgh3+cpJNuOugMgdBQLg6kQo9HcV7jCu9XyQuGrDbSZu5snwqpbi019oQreOm6Kc7X3TD3zdEpyYYIKdRwkQO/PG3hRWGIj3CeCn8KWSOSeh+zvWbYQ95LCfC2SDQ1UefVxCr/I80vvNngSy7/SE1Pqz6PavRn6KoRbIph6uxrki0N7Bj8uy3FFTI7sl5twF8YSn9Uc+db3XzY/FYz+8boPz02kcZS+cZeE75nuSJ8rTLf/rY1YzXoINdL1abjUmLIiP2Tc94wYEzQHz+wDLAd9MfOdiBY9OprYZ2xyslTmm9rwfCoF1U+8rp3ZeRxXl68jYtO/07j/GPdJW99+NQqLjcIynyAjB13pQQLxwmVV+XcOUVtljYFS78pKYlen6LtoD2wrJZZHbXfYcEXsLsMF8UMJzS9E+EpF+xKKYy/EPMgWIBxT4ARsbFRxzXpJZOwGfhZfX0SQp9hv5U57zatE2km19MtMc3AILK7XM7roiTnAZ1+OUTRIdWjIWywuUIUtGGY9O+cXN8T1Bz2mUFWv+tPbjZfmcuyQ/EM5HnRefdF92i8REB0CRrHFj/AG1A/ZVfNPDMWgsl3w6O1tiXccxfzT8XGKTlE/qux9o1O/lFbe7Nj3Lodx9G/XWIfMgeCXo5A72DRrn9FX4qWAhMfU9rhArCwwoUNlRKUWwUrJc0BsopYJnd+wmLUG0A6jixr+jQMySlwExu9xFSaMzGfvNBRGMHFrtJGhfIbzjnPBoJJ/ttyzy3/Zjj92SUxqO8pY5MnkBia2KxwiX5EkrYRp2MBh0GtJTZKUzNyiEaJxxZv/beE/Sr2aKxevetWVgt0XbmPRlYinYPfjo9+4T78Mg+DmXU2OLKA3XW9nOOTPe31UV3iVDaSIrVQAiWNY+c30Q5V0UaZUFthx7zWU1l6l+lan28OvK9FwtxVc+0w9cOowqPj2p+s5zhY+K5CqSPnH/MUCQrIyuchS/+Q5Vx/lEUJki4HuyNsvimjxq8+Zk2UqcqRlXz3I+M9ooBNCopUAWd0FeOAy8IpdyLXt6BcjkYqF9NpEtL5cxns5qXXmNGS6G0OuKs799kCR8Ord7rRG40JzJFDzJZ1oJI29E0LcrZyCz9UzXPq4aU7w8x6iP39NxDMDGf9yiZ91xJItZb1SmbB2R1vNfJ0NRsfDG29hQuO0E8cnXR/ekaTgW+tsW6UbfobUm/7xMc/SJhZKsrYWuyiY38e2/0v//28Ux0DUxh306IADKhQYzQEzPwBzDOM5ATnw84ToeypAKO38IQeGs8mErCeW6IdToHA7I3FEy/TkHUUD6tKqj4uIKwlLD7kbTZ1DZpXNzmEfwOqeL5nKf6wWhA3CV91P8A3eKZ+P+edtqinQEHZmBdKg6DUPhPpevdAtyj2jWqu/Hq/Rut5nMWawtAAAA= 2x"
+          alt="logo-jefferson"
+          width="70"
+          height="70"
+          src="data:image/webp;base64,UklGRlgEAABXRUJQVlA4WAoAAAAQAAAARQAARQAAQUxQSOYAAAABgFZtb93mg2AIghQGFROLQc0gZdAxMARDMARBUO++SH93TkRMAMYTX+9dbX6vVyasTrnalo1pRcpq+540LavtnedQs+07TbioOdRjKJvTPJDNbf7pMMeXH0g9KX3r5rp9yeZcPpB51/R2ujMBQOZfE8ABmAAtggqyEBPHwCWGUmP46zF0i1GD+FdSg+gx9HsMtcRQOAZOMRBqBA2QCBhIGgABEH8nACR1R28Qb4LPzVfHV1JPSt/Ang78Kn4Ev4sXweihHpQxTn2/Rpgqm6lgNt02UklYSNz2qJKwmrjUvkD7vXDCOFZQOCBMAwAAsBAAnQEqRgBGAD6RPphIJaOioSpYDSiwEgllAMxc+hWYoMcz7xs/T/sDfrf1nfRmSIBGVANmXvhBEtFY15yYlBGMJU/ysWc7PIdtLS/S7p3DpQu+ntf1H+B2wZefpnP0kOTJkOvbLW36wHOlUhHGT5mJnK8/wV4+AbMxzAtfAkON6NGDVMfrFq+zbQ+JOAD++DfbkAGksZ3EcOH9imMFzt+ZSos4M0lbm63suP0roEkrJ9mU50Y9e9NgUJ1MTdnmqhtQp6zg7LS7kYLUQqH5BYHa8aHwnoPjPvzZgrzJuAgWorb9xnetbRqvfTbauiP/rmMd81oQ7aai64D4gaMufLeMrB1fk5RnGzLIrygMBei+tO2AccXgr0MEopZ6mDT/9jX//+iYNJeHAeQQwOZ3uHCwEQSWGOf6f5VuVS1Rh+bxL9OR/DOFVnoRfoo41ksTwetKWZLfO9w6KjX0RsM65VaY5/cGZG92052+PVCHMVhpEZaTeochW2Xn9h+YwOxKDaEufAoyyGejOFGR9Awn77GfS4JmuWuO0nzwulkjzODUIq+Y4rqwFz+0x8RvkcRVZGzQSz6UgYHMacPUVjLJyGV2C6geWhwTeW9ylcw/HgQ0LF2mEPrE4Ek7b8PeVnIIf6HlEwLx2J4IzmfidqfWqvVSeONot+xIGvttvMWBAOYQBHwfIEWYdPm09+4GTgN8HucPhiHvb9VLTAsUPQXGOz+g9h/JzOfXVIgyhE6U4xVlmDNtewUTUdHSKyqmZ7Z7LYMFUg3FrlYGN4XzIdra8Rr9O/WNoFb12qmba9MJQmiZ7ciVe/kgTAkICWiz0pu53ocfPSUQlVeKzU9I1bHT9t82ZnVMw8VLIiE2dkCS54fKBjMVxi30I/+KFJL6RwW/aI7q530dXiwMQgVBTjj/MxW/6b8echvQ7yf8wIMo1s+M2BtwNO4P3msHqlw0aR5rZPkRUdKsqi5TZnSRWEFf0cGPVFDY4e1rk9+9z5n67alnlHxYJRC8M5urZHN6IreEis2tFPUZ3uDZzkTz7r8+a0/w7ElNjK/KdsG0Hgyrhr4Em0W9bv+eJmrfYzuJgjMju0cnmBwX1dTQYw9dyCjuG8R1aiXi9ompLyFIAA=="
+        />
+      </a>
+      <h2 class="title-work-together">
+        Let's <span class="span-accent">work</span>
+        <span class="title-bottom">together</span>
+      </h2>
+    </div>
+    <form class="footer-form">
+      <label class="footer-form-label" for="your-email">
+        <input
+          class="footer-form-input"
+          id="your-email"
+          type="email"
+          placeholder="clients@gmail.com"
+          autocomplete="off"
+          required
+          name="your-email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+      </label>
+      <label class="footer-form-label" for="your-comments">
+        <input
+          class="footer-form-input"
+          id="your-comments"
+          type="text"
+          placeholder="comments"
+          autocomplete="off"
+          required
+          name="your-comments"
+        />
+      </label>
+      <div class="footer-container-btn">
+        <button class="footer-btn-send" type="submit" data-modal-open>
+          Send
+        </button>
+      </div>
+    </form>
+    <address class="contacts">
+      <ul class="footer-list-contacts">
+        <li class="footer-item-contacts-mail">
+          <a class="footer-link" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="footer-item-contacts-tel">
+          <a class="footer-link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+  <!-- modal menu -->
+  <div class="footer-backdrop" data-modal>
+    <div class="footer-modal">
+      <span class="footer-close" data-modal-close>&times;</span>
+      <div class="footer-modal-content-position">
+        <h2 class="footer-modal-title">
+          Thank you for your interest in cooperation!
+        </h2>
+        <p class="footer-modal-text">
+          The manager will contact you shortly to discuss further details and
+          opportunities for cooperation. Please stay in touch.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+</html>
