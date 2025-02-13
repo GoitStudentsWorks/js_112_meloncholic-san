@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-TeamExtremeDeadline01/",
+    "build": "vite build --base=/meloncholic-san/",
     "preview": "vite preview"
   },
   "devDependencies": {
